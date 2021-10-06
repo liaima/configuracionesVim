@@ -9,6 +9,7 @@ Plug 'easymotion/vim-easymotion'
 Plug 'scrooloose/nerdtree'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'mattn/emmet-vim'
+Plug 'mhinz/vim-signify'
 
 "-----Autocompletado-----
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
