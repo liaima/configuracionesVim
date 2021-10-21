@@ -48,4 +48,4 @@ inoremap ff <Esc>
 
 "-----Enlases a Plugins y configuraciones extras----
 source ~/.config/.vim/vimConfig/plugins.vim
-source ~/.config/.vim/vimConfig/cocConfigs.vim
+source ~/.config/.vim/vimConfig/pluginConfigs.vim
