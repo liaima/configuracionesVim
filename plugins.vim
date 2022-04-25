@@ -41,3 +41,4 @@ nmap <Leader>nt :NERDTreeFind<CR>
 "Para que se cierre NerdTree al abrir archivo: 
 "let NERDTreeQuitOnOpen=1
 
+
