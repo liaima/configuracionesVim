@@ -40,6 +40,7 @@ nmap <Leader>q :q<CR>
 nmap <Leader>wq :wq<CR>
 nmap <Leader>ht <C-y>,i
 nmap <Leader>ss :source<space>~/.vimrc<CR>
+nmap <Leader>r :%s/
 
 nmap <Leader>b !!$SHELL<CR>
 
