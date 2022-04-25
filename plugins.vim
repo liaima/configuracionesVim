@@ -20,6 +20,7 @@ Plug 'mhinz/vim-signify' "Agregar indicador de lineas modificadas sin commitear
 
 "-----Autocompletado-----
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'terryma/vim-multiple-cursors' "Multiples cursores
 
 "-----Debug-----
 Plug 'vim-vdebug/vdebug'

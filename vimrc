@@ -30,15 +30,22 @@ inoremap " ""<Esc>i
 inoremap ` ``<Esc>i
 inoremap php? <?php <CR>?><Esc>hO
 inoremap <? <?=<space><space>?><Esc>hhi
+vmap ( di(<Esc>p
+vmap { di{<Esc>p
+vmap [ di[<Esc>p
+vmap ' di'<Esc>p
+vmap " di"<Esc>p
 
 "----Tecla lider espacio:-----
 let mapleader=" "
 
 "----Atajos de teclado Personalizados-----
-"Salida y guardado
+"salida y guardado
 nmap <Leader>w :w<CR>
 nmap <Leader>q :q<CR>
 nmap <Leader>wq :wq<CR>
+nmap <Leader>q! :q!<CR>
+inoremap jj <Esc>
 
 "Generar html
 nmap <Leader>ht <C-y>,i
@@ -49,8 +56,16 @@ nmap <Leader>r :%s//gc<Left><Left><Left>
 nmap <Leader>b !!$SHELL<CR>
 
 "Saltar un caracter:
-inoremap <space><space> <Esc>lla
+inoremap <space><space> <Esc>la 
+
+"---------Mover lineas
+"Mover linea hacia abajo
+nmap <C-Down> ddp 
+"Mover linea arriba
+nmap <C-Up> ddkkp 
+"Duplicar linea
+nmap <M-d> ddkpp
 
 "-----Enlases a Plugins y configuraciones extras----
-source ~/.config/.vim/vimConfig/plugins.vim
-source ~/.config/.vim/vimConfig/pluginConfigs.vim
+source ./plugins.vim
+source ./pluginConfigs.vim
