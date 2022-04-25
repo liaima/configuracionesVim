@@ -44,7 +44,7 @@ nmap <Leader>r :%s//gc<Left><Left><Left>
 
 nmap <Leader>b !!$SHELL<CR>
 
-inoremap <space><space> <Esc>la
+inoremap <space><space> <Esc>lla
 inoremap ff <Esc>
 
 "-----Enlases a Plugins y configuraciones extras----
