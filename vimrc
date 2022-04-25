@@ -35,17 +35,21 @@ inoremap <? <?=<space><space>?><Esc>hhi
 let mapleader=" "
 
 "----Atajos de teclado Personalizados-----
+"Salida y guardado
 nmap <Leader>w :w<CR>
 nmap <Leader>q :q<CR>
 nmap <Leader>wq :wq<CR>
+
+"Generar html
 nmap <Leader>ht <C-y>,i
-nmap <Leader>ss :source<space>~/.vimrc<CR>
+
+"Buscar y Remplazar
 nmap <Leader>r :%s//gc<Left><Left><Left>
 
 nmap <Leader>b !!$SHELL<CR>
 
+"Saltar un caracter:
 inoremap <space><space> <Esc>lla
-inoremap ff <Esc>
 
 "-----Enlases a Plugins y configuraciones extras----
 source ~/.config/.vim/vimConfig/plugins.vim
