@@ -67,5 +67,5 @@ nmap <C-Up> ddkkp
 nmap <M-d> ddkpp
 
 "-----Enlases a Plugins y configuraciones extras----
-source ./plugins.vim
-source ./pluginConfigs.vim
+source ~/.config/.vim/vimConfig/plugins.vim
+source ~/.config/.vim/vimConfig/pluginConfigs.vim
