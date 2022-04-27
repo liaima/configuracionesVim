@@ -56,7 +56,7 @@ nmap <Leader>r :%s//gc<Left><Left><Left>
 nmap <Leader>b !!$SHELL<CR>
 
 "Saltar un caracter:
-inoremap <space><space> <Esc>la 
+inoremap <space><space> <Esc>la
 
 "---------Mover lineas
 "Mover linea hacia abajo
