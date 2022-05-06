@@ -10,7 +10,8 @@ Plug 'itchyny/lightline.vim'
 
 "-----Temas-----
 Plug 'morhetz/gruvbox'
-
+Plug 'Rigellute/rigel'
+Plug 'arcticicestudio/nord-vim'
 "-----IDE-----
 Plug 'easymotion/vim-easymotion'
 Plug 'scrooloose/nerdtree'
@@ -28,9 +29,10 @@ Plug 'vim-vdebug/vdebug'
 call plug#end()
 
 "-----Configuración de Tema-----
-colorscheme gruvbox
-set background=dark
-let g:gruvbox_contrast_dark="hard"
+set termguicolors
+colorscheme rigel
+"set background=dark
+"let g:gruvbox_contrast_dark="hard"
 
 "-----Configuración de EasyMotion:-----
 "configuración de tecla lider:
@@ -40,6 +42,6 @@ nmap <Leader>s <Plug>(easymotion-s2)
 "-----Configuración de NerdTree-----
 nmap <Leader>nt :NERDTreeFind<CR>
 "Para que se cierre NerdTree al abrir archivo: 
-"let NERDTreeQuitOnOpen=1
+let NERDTreeQuitOnOpen=1
 
 

@@ -52,6 +52,7 @@ nmap <Leader>ht <C-y>,i
 
 "Buscar y Remplazar
 nmap <Leader>r :%s//gc<Left><Left><Left>
+nmap <Leader>/ :noh
 
 nmap <Leader>b !!$SHELL<CR>
 
