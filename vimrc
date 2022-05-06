@@ -36,7 +36,7 @@ vmap [ di[<Esc>p
 vmap ' di'<Esc>p
 vmap " di"<Esc>p
 
-inoremap <C-,> A;<Esc>
+nmap <C-,> A;<Esc>
 
 "----Tecla lider espacio:-----
 let mapleader=" "
