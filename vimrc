@@ -36,6 +36,8 @@ vmap [ di[<Esc>p
 vmap ' di'<Esc>p
 vmap " di"<Esc>p
 
+inoremap <C-,> A;<Esc>
+
 "----Tecla lider espacio:-----
 let mapleader=" "
 
@@ -52,7 +54,7 @@ nmap <Leader>ht <C-y>,i
 
 "Buscar y Remplazar
 nmap <Leader>r :%s//gc<Left><Left><Left>
-nmap <Leader>/ :noh
+nmap <Leader>/ :nohl
 
 nmap <Leader>b !!$SHELL<CR>
 
