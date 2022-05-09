@@ -1,10 +1,36 @@
 " ----------------------------------------------------------------------------
+" ----------------------themes Configs------------------------------------
+" ---------------------------------------------------------------------------
+set termguicolors
+colorscheme rigel
+"set background=dark
+"let g:gruvbox_contrast_dark="hard"
+
+let g:rigel_airline = 1 " statusBartheme
+let g:airline_theme = 'rigel'
+
+" ----------------------------------------------------------------------------
+" ----------------------EasyMotion Configs------------------------------------
+"  ---------------------------------------------------------------------------
+
+"configuración de tecla lider:
+nmap <Leader>s <Plug>(easymotion-s2)
+"            ^-------al precionar la S activara el modo easymotion
+
+
+" ----------------------------------------------------------------------------
 " ----------------------Status Bar Configs------------------------------------
 "  ---------------------------------------------------------------------------
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#branch#enabled = 1
+let g:airline_powerline_fonts = 1
 
 " ----------------------------------------------------------------------------
 " ----------------------NERDTree Configs------------------------------------
 "  ---------------------------------------------------------------------------
+nmap <Leader>nt :NERDTreeFind<CR>
+"Para que se cierre NerdTree al abrir archivo: 
+let NERDTreeQuitOnOpen=1
 let NERDTreeShowHidden=1
 
 

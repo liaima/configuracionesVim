@@ -5,8 +5,10 @@ call plug#begin('~/.vim/plugged')
 Plug 'sheerun/vim-polyglot'
 
 "---Status Bar
-Plug 'maximbaz/lightline-ale'
-Plug 'itchyny/lightline.vim'
+"Plug 'maximbaz/lightline-ale'
+"Plug 'itchyny/lightline.vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 "-----Temas-----
 Plug 'morhetz/gruvbox'
@@ -27,21 +29,4 @@ Plug 'terryma/vim-multiple-cursors' "Multiples cursores
 Plug 'vim-vdebug/vdebug'
 
 call plug#end()
-
-"-----Configuración de Tema-----
-set termguicolors
-colorscheme rigel
-"set background=dark
-"let g:gruvbox_contrast_dark="hard"
-
-"-----Configuración de EasyMotion:-----
-"configuración de tecla lider:
-nmap <Leader>s <Plug>(easymotion-s2)
-"            ^-------al precionar la S activara el modo easymotion
-
-"-----Configuración de NerdTree-----
-nmap <Leader>nt :NERDTreeFind<CR>
-"Para que se cierre NerdTree al abrir archivo: 
-let NERDTreeQuitOnOpen=1
-
 
