@@ -32,7 +32,8 @@ nmap <Leader>nt :NERDTreeFind<CR>
 "Para que se cierre NerdTree al abrir archivo: 
 let NERDTreeQuitOnOpen=1
 let NERDTreeShowHidden=1
-
+set guifont=3270\ Nerd\ Font\ 11
+set encoding=utf8
 
 " ----------------------------------------------------------------------------
 " ----------------------COC Configurations------------------------------------

@@ -20,10 +20,12 @@ Plug 'scrooloose/nerdtree'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'mattn/emmet-vim'
 Plug 'mhinz/vim-signify' "Agregar indicador de lineas modificadas sin commitear
+Plug 'ryanoasis/vim-devicons' "Iconos para NerdTree
 
 "-----Autocompletado-----
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'terryma/vim-multiple-cursors' "Multiples cursores
+Plug 'yaegassy/coc-volar', {'do': 'yarn install --frozen-lockfile'} "Volar para Vue.js
 
 "-----Debug-----
 Plug 'vim-vdebug/vdebug'
