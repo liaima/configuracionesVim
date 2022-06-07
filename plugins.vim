@@ -21,6 +21,7 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'mattn/emmet-vim'
 Plug 'mhinz/vim-signify' "Agregar indicador de lineas modificadas sin commitear
 Plug 'ryanoasis/vim-devicons' "Iconos para NerdTree
+Plug 'Xuyuanp/nerdtree-git-plugin' "Seguimiento Git en NerdTree
 
 "-----Autocompletado-----
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
