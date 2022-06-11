@@ -47,19 +47,27 @@ nmap <Leader>w :w<CR>
 nmap <Leader>q :q<CR>
 nmap <Leader>wq :wq<CR>
 nmap <Leader>q! :q!<CR>
-inoremap jj <Esc>
 
+"modo normal sin Esc
+inoremap <Leader>\| <Esc>
+inoremap <Leader><tab> <Esc>
 "Generar html
 nmap <Leader>ht <C-y>,i
 
 "Buscar y Remplazar
 nmap <Leader>r :%s//gc<Left><Left><Left>
-nmap <Leader>/ :nohl
+nmap <Leader>/ :nohl<CR>
 
 nmap <Leader>b !!$SHELL<CR>
 
 "Saltar un caracter:
 inoremap <space><space> <Esc>la
+
+"Moverse con hjkl en modo insert:
+inoremap <M-h> <Esc>i
+inoremap <M-j> <Esc>ja
+inoremap <M-k> <Esc>ka
+inoremap <M-l> <Esc>la
 
 "---------Mover lineas
 "Mover linea hacia abajo
