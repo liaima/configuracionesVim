@@ -36,6 +36,14 @@ set guifont=3270\ Nerd\ Font\ 11
 set encoding=utf8
 
 " ----------------------------------------------------------------------------
+" ----------------------Telescope Configs------------------------------------
+"  ---------------------------------------------------------------------------
+" Find files using Telescope command-line sugar.
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+" ----------------------------------------------------------------------------
 " ----------------------COC Configurations------------------------------------
 "  ---------------------------------------------------------------------------
 " Set internal encoding of vim, not needed on neovim, since coc.nvim using some

@@ -31,5 +31,9 @@ Plug 'yaegassy/coc-volar', {'do': 'yarn install --frozen-lockfile'} "Volar para 
 "-----Debug-----
 Plug 'vim-vdebug/vdebug'
 
+"-----Telescope----
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
+
 call plug#end()
 

@@ -28,6 +28,7 @@ inoremap < <><Esc>i
 inoremap ' ''<Esc>i
 inoremap " ""<Esc>i
 inoremap ` ``<Esc>i
+inoremap `` ```<CR>```<Esc>O
 inoremap php? <?php <CR>?><Esc>hO
 inoremap <? <?=<space><space>?><Esc>hhi
 vmap ( di(<Esc>p
