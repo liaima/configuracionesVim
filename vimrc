@@ -1,8 +1,11 @@
 
 syntax on
 
+set guicursor=i-ci:blinkwait700-blinkoff400-blinkon250
 set mouse=a
-set sw=2
+"set sw=2
+set shiftwidth=4
+set tabstop=4
 set expandtab
 
 set numberwidth=4
@@ -52,7 +55,6 @@ nmap <Leader>q! :q!<CR>
 nmap <Leader>tv :botright vnew <Bar> :terminal<CR>
 nmap <Leader>th :botright new <Bar> :terminal<CR>
 "modo normal sin Esc
-inoremap <Leader>\| <Esc>
 inoremap <Leader><tab> <Esc>
 "Generar html
 nmap <Leader>ht <C-y>,i
