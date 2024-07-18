@@ -13,7 +13,7 @@ Plug 'vim-airline/vim-airline-themes'
 "-----Temas-----
 Plug 'morhetz/gruvbox'
 Plug 'Rigellute/rigel'
-Plug 'arcticicestudio/nord-vim'
+"Plug 'arcticicestudio/nord-vim'
 "-----IDE-----
 Plug 'easymotion/vim-easymotion'
 Plug 'scrooloose/nerdtree'
@@ -22,6 +22,7 @@ Plug 'mattn/emmet-vim'
 Plug 'mhinz/vim-signify' "Agregar indicador de lineas modificadas sin commitear
 Plug 'ryanoasis/vim-devicons' "Iconos para NerdTree
 Plug 'Xuyuanp/nerdtree-git-plugin' "Seguimiento Git en NerdTree
+Plug 'kdheepak/lazygit.nvim' "Lazy Git for work with git in terminal
 
 "-----Autocompletado-----
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -33,7 +34,7 @@ Plug 'vim-vdebug/vdebug'
 
 "-----Telescope----
 Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.4' }
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
 
 call plug#end()

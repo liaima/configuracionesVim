@@ -1,13 +1,15 @@
 " ----------------------------------------------------------------------------
 " ----------------------themes Configs------------------------------------
 " ---------------------------------------------------------------------------
-set termguicolors
-colorscheme rigel
-"set background=dark
+"set termguicolors
+let g:gruvbox_italic=1
+"colorscheme gruvbox
+colorscheme gruvbox
+set background=dark
 "let g:gruvbox_contrast_dark="hard"
 
-let g:rigel_airline = 1 " statusBartheme
-let g:airline_theme = 'rigel'
+"let g:rigel_airline = 1 " statusBartheme
+"let g:airline_theme = 'rigel'
 
 " ----------------------------------------------------------------------------
 " ----------------------EasyMotion Configs------------------------------------
