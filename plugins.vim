@@ -2,7 +2,7 @@
 call plug#begin('~/.vim/plugged')
 
 "------Sintaxis
-Plug 'sheerun/vim-polyglot'
+"Plug 'sheerun/vim-polyglot'
 
 "---Status Bar
 "Plug 'maximbaz/lightline-ale'

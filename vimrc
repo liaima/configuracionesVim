@@ -20,6 +20,14 @@ set ruler
 set laststatus=2
 set showmatch
 
+set t_Co=256
+set re=0
+set redrawtime=10000
+
+"------Nvim como git editor-----
+if has('nvim') && executable('nvr')
+  let $GIT_EDITOR = "nvr -cc split --remote-wait +'set bufhidden=wipe'"
+endif
 
 "------Autocompletado de simbolos-----
 
@@ -83,6 +91,17 @@ nmap <C-Down> ddp
 nmap <C-Up> ddkkp 
 "Duplicar linea
 nmap <M-d> ddkpp
+
+"norm
+vmap <Leader>n :norm 
+
+"Make comment
+vmap <Leader>mc :norm 0i//<CR>
+vmap <Leader>uc :norm 0xx<CR>
+if &filetype ==# 'python' || &filetype ==# 'sh'
+    vmap <Leader>mc :norm 0i#<CR>
+    vmap <Leader>uc :norm 0x<CR>
+endif
 
 "-----Enlases a Plugins y configuraciones extras----
 source ~/.config/.vim/vimConfig/plugins.vim
