@@ -22,7 +22,7 @@ nnoremap <silent> <leader>gg :LazyGit<CR>
 "  ---------------------------------------------------------------------------
 
 "configuración de tecla lider:
-nmap <Leader>s <Plug>(easymotion-s2)
+nmap <Leader><Leader>s <Plug>(easymotion-s2)
 "            ^-------al precionar la S activara el modo easymotion
 
 
