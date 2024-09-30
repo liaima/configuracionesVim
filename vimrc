@@ -86,14 +86,18 @@ inoremap <M-l> <Esc>la
 
 "---------Mover lineas
 "Mover linea hacia abajo
-nmap <C-Down> ddp 
+nmap <M-j> ddp 
 "Mover linea arriba
-nmap <C-Up> ddkkp 
+nmap <M-k> ddkkp 
 "Duplicar linea
 nmap <M-d> ddkpp
 
 "norm
 vmap <Leader>n :norm 
+
+"----Make TODO lists-----
+nmap <Leader>tdi o* [ <Esc>A 
+nmap <Leader>tdl o== TODO<Esc>o* [ <Esc>A 
 
 "Make comment
 vmap <Leader>mc :norm 0i//<CR>
@@ -102,6 +106,9 @@ if &filetype ==# 'python' || &filetype ==# 'sh'
     vmap <Leader>mc :norm 0i#<CR>
     vmap <Leader>uc :norm 0x<CR>
 endif
+
+"------Fold bloks
+set foldmethod=indent
 
 "-----Enlases a Plugins y configuraciones extras----
 source ~/.config/.vim/vimConfig/plugins.vim
