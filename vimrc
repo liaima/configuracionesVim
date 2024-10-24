@@ -3,10 +3,14 @@ syntax on
 
 set guicursor=i-ci:blinkwait700-blinkoff400-blinkon250
 set mouse=a
-"set sw=2
-set shiftwidth=4
-set tabstop=4
-set expandtab
+set sw=2
+set autoindent
+au BufNewFile, BufRead *.py
+    \ set shiftwidth=4
+    \ set tabstop=4
+    \ set expandtab
+    \ set fileformat=unix
+    \ set foldmethod=indent
 
 set numberwidth=4
 
@@ -106,9 +110,6 @@ if &filetype ==# 'python' || &filetype ==# 'sh'
     vmap <Leader>mc :norm 0i#<CR>
     vmap <Leader>uc :norm 0x<CR>
 endif
-
-"------Fold bloks
-set foldmethod=indent
 
 "-----Enlases a Plugins y configuraciones extras----
 source ~/.config/.vim/vimConfig/plugins.vim
