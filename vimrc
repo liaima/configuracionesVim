@@ -13,6 +13,7 @@ au BufNewFile, BufRead *.py
     \ set foldmethod=indent
 
 set numberwidth=4
+let g:python3_host_prog = "/usr/bin/python3"
 
 set clipboard=unnamedplus
 set encoding=utf-8
