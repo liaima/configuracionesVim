@@ -52,6 +52,13 @@ nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 " ----------------------------------------------------------------------------
+" ----------------------REST------------------------------------
+"  ---------------------------------------------------------------------------
+nmap <Leader>xr :call VrcQuery()<CR>
+let g:vrc_set_default_mapping = 0
+let g:vrc_response_default_content_type = 'application/json'
+let g:vrc_output_buffer_name = '_OUTPUT.json'
+" ----------------------------------------------------------------------------
 " ----------------------COC Configurations------------------------------------
 "  ---------------------------------------------------------------------------
 " Set internal encoding of vim, not needed on neovim, since coc.nvim using some
