@@ -53,11 +53,38 @@ nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 " ----------------------------------------------------------------------------
 " ----------------------REST------------------------------------
-"  ---------------------------------------------------------------------------
+" ---------------------------------------------------------------------------
 nmap <Leader>xr :call VrcQuery()<CR>
 let g:vrc_set_default_mapping = 0
 let g:vrc_response_default_content_type = 'application/json'
 let g:vrc_output_buffer_name = '_OUTPUT.json'
+
+" Goyo:
+
+nnoremap <leader>go <cmd>Goyo<cr>
+
+function! s:goyo_enter()
+  set noshowmode
+  set noshowcmd
+  set linebreak
+  set spell spelllang=es_ar " 'z=' for correct; ']s' for next word
+  set scrolloff=999
+endfunction
+
+function! s:goyo_leave()
+  set showmode
+  set showcmd
+  set nolinebreak
+  set nospell
+  set scrolloff=5
+endfunction
+
+autocmd! User GoyoEnter nested call <SID>goyo_enter()
+autocmd! User GoyoLeave nested call <SID>goyo_leave()
+
+let g:goyo_height='80%'
+let g:goyo_width='80%'
+
 " ----------------------------------------------------------------------------
 " ----------------------COC Configurations------------------------------------
 "  ---------------------------------------------------------------------------

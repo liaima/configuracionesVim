@@ -68,9 +68,6 @@ nmap <Leader>q! :q!<CR>
 
 nmap <Leader>tv :botright vnew <Bar> :terminal<CR>
 nmap <Leader>th :botright new <Bar> :terminal<CR>
-"modo normal sin Esc
-inoremap <Leader><tab> <Esc>
-inoremap ff <Esc>
 "Generar html
 nmap <Leader>ht <C-y>,i
 

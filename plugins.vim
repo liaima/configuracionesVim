@@ -40,5 +40,8 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend upda
 " REST:
 Plug 'diepm/vim-rest-console'
 
+" GOYO Text Editor:
+Plug 'junegunn/goyo.vim'
+
 call plug#end()
 
